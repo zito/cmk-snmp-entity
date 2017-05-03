@@ -45,8 +45,8 @@ def inventory_snmp_entity(info):
 
 def check_snmp_entity(item, params, info):
     chassis = filter_chassis(info)
-    params.extend([None] * (len(chassis) - len(params)))
-    chassis.extend([None] * (len(params) - len(chassis)))
+    params.extend([(None, None)] * (len(chassis) - len(params)))
+    chassis.extend([(None, None)] * (len(params) - len(chassis)))
     t = []
     status = 0
     ts = "OK"
