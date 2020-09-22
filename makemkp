@@ -59,7 +59,7 @@ class fake_file:
 #-----------------------------------------------------------------------
 
 pacname = 'cmk-snmp-entity'
-version = '1.1'
+version = '1.2'
 
 filelists = {}
 package = {
@@ -67,8 +67,8 @@ package = {
     "name"                 : pacname,
     "description"          : "monitoring changes of ENTITY-MIB entries",
     "version"              : version,
-    "version.packaged"     : '1.2.8p21',
-    "version.min_required" : '1.1.12p7',
+    "version.packaged"     : '1.6.0p17',
+    "version.min_required" : '1.5.0p0',
     "author"               : "Vaclav Ovsik",
     "download_url"         : "https://github.com/zito/%s/" % pacname,
     "files"                : filelists
