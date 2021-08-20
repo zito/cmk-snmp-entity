@@ -63,7 +63,7 @@ class fake_file:
 #-----------------------------------------------------------------------
 
 pacname = 'cmk-snmp-entity'
-version = '2.0'
+version = '2.1'
 
 filelists = {}
 package = {

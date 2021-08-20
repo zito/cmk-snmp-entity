@@ -14,7 +14,7 @@ def parse_snmp_entity(string_table: StringTable) -> Section:
     for phy_class, phy_name, phy_model_name, phy_serial_num in string_table:
         if phy_class == '3' or phy_name == 'Chassis':
             parsed.append((phy_model_name, phy_serial_num))
-    return { 'model_serial_pair': parsed }
+    return { 'model_serial_pair': parsed } if parsed else None
 
 def discover_snmp_entity(section: Section) -> DiscoveryResult:
     if section:
